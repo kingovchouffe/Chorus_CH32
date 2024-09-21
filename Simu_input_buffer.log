@@ -1,0 +1,11 @@
+LTspice 24.0.12 for Windows
+Circuit: * C:\Users\Pierre-Anthony\Documents\GitHub\Chorus_CH32\Simu_input_buffer.asc
+Start Time: Fri Sep 20 18:16:31 2024
+solver = Normal
+Maximum thread count: 24
+tnom = 27
+temp = 27
+method = modified trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.037 seconds.
+

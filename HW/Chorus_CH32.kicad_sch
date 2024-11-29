@@ -2253,10 +2253,16 @@
 		(uuid "1b6adb0a-8116-442a-afaf-eec6bf9bbbe2")
 	)
 	(junction
-		(at 78.74 29.21)
+		(at 137.16 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2e70d88a-0e48-4781-a3af-76cb96a726f4")
+	)
+	(junction
+		(at 113.03 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3b931539-907b-4bdb-8e16-c27ab8aeb864")
 	)
 	(junction
 		(at 33.02 67.31)
@@ -2283,10 +2289,10 @@
 		(uuid "785ce9b5-8989-49d0-b9a3-a2c2e3748c00")
 	)
 	(junction
-		(at 64.77 36.83)
+		(at 137.16 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7d0750f1-b361-4648-ae7a-50a7433a7c61")
+		(uuid "85047449-956f-4b6c-acf4-a4123f65aec6")
 	)
 	(junction
 		(at 135.89 100.33)
@@ -2295,16 +2301,16 @@
 		(uuid "90093393-067a-4bcb-8151-1631c2d5b464")
 	)
 	(junction
-		(at 78.74 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b6a08ff8-219a-4187-86c3-f7a6b4071c52")
-	)
-	(junction
 		(at 58.42 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c0f73e37-bbc3-420e-a1ae-74510c1c32a7")
+	)
+	(junction
+		(at 125.73 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d4401a07-6594-408c-8d47-7141245e8daa")
 	)
 	(junction
 		(at 64.77 29.21)
@@ -2333,6 +2339,16 @@
 	(no_connect
 		(at 24.13 34.29)
 		(uuid "a9836d01-9996-48b1-9496-cb17cd1300e6")
+	)
+	(wire
+		(pts
+			(xy 113.03 38.1) (xy 113.03 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "072c30f4-8563-4a92-9240-eaa35a31cc6c")
 	)
 	(wire
 		(pts
@@ -2383,6 +2399,16 @@
 			(type default)
 		)
 		(uuid "17776954-f617-462e-930d-7f2613931a1f")
+	)
+	(wire
+		(pts
+			(xy 113.03 36.83) (xy 137.16 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "188436b5-add1-4097-b172-660443e5b2b0")
 	)
 	(wire
 		(pts
@@ -2462,7 +2488,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "3c05bd9e-03d9-48a7-b666-bc733bd59f65")
+		(uuid "40f28d1d-1199-44be-81e6-3076cd029b70")
 	)
 	(wire
 		(pts
@@ -2486,7 +2512,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 36.83) (xy 83.82 36.83)
+			(xy 137.16 36.83) (xy 142.24 36.83)
 		)
 		(stroke
 			(width 0)
@@ -2516,7 +2542,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 29.21) (xy 83.82 29.21)
+			(xy 137.16 27.94) (xy 142.24 27.94)
 		)
 		(stroke
 			(width 0)
@@ -2666,6 +2692,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 36.83) (xy 137.16 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94d8fc62-afba-4af5-b0c8-6b4dc09bc2f1")
+	)
+	(wire
+		(pts
 			(xy 33.02 66.04) (xy 33.02 67.31)
 		)
 		(stroke
@@ -2706,17 +2742,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 36.83) (xy 78.74 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aabcb07d-3b90-4234-bd30-b76ea64fc4ff")
-	)
-	(wire
-		(pts
-			(xy 76.2 29.21) (xy 78.74 29.21)
+			(xy 134.62 27.94) (xy 137.16 27.94)
 		)
 		(stroke
 			(width 0)
@@ -2766,6 +2792,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 27.94) (xy 125.73 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb218129-89d5-4ff3-8d9d-832df6049bd5")
+	)
+	(wire
+		(pts
 			(xy 33.02 68.58) (xy 33.02 67.31)
 		)
 		(stroke
@@ -2806,7 +2842,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 30.48) (xy 83.82 29.21)
+			(xy 142.24 29.21) (xy 142.24 27.94)
 		)
 		(stroke
 			(width 0)
@@ -2816,7 +2852,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 35.56) (xy 83.82 36.83)
+			(xy 142.24 34.29) (xy 142.24 36.83)
 		)
 		(stroke
 			(width 0)
@@ -3095,7 +3131,7 @@
 	)
 	(symbol
 		(lib_id "power:+2V5")
-		(at 78.74 29.21 0)
+		(at 137.16 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3104,7 +3140,7 @@
 		(fields_autoplaced yes)
 		(uuid "115f00c2-5795-4667-8fa4-218a1f9d8361")
 		(property "Reference" "#PWR015"
-			(at 78.74 33.02 0)
+			(at 137.16 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3113,7 +3149,7 @@
 			)
 		)
 		(property "Value" "+2V5"
-			(at 78.74 25.0769 0)
+			(at 137.16 23.8069 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3121,7 +3157,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 29.21 0)
+			(at 137.16 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3130,7 +3166,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 29.21 0)
+			(at 137.16 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3139,7 +3175,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+2V5\""
-			(at 78.74 29.21 0)
+			(at 137.16 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3161,7 +3197,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 113.03 36.83 0)
+		(at 113.03 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3169,7 +3205,7 @@
 		(dnp no)
 		(uuid "1de7e01f-bac6-4dfc-8bc4-2f286cd3a07d")
 		(property "Reference" "#PWR07"
-			(at 113.03 43.18 0)
+			(at 113.03 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3178,7 +3214,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 113.03 40.64 0)
+			(at 113.03 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3186,7 +3222,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 36.83 0)
+			(at 113.03 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3195,7 +3231,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 36.83 0)
+			(at 113.03 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3204,7 +3240,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 113.03 36.83 0)
+			(at 113.03 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4437,28 +4473,28 @@
 			)
 		)
 		(pin "2"
-			(uuid "d6d167c2-71b2-4a06-8c9f-6cd5865d1549")
+			(uuid "d6d167c2-71b2-4a06-8c9f-6cd5865d154a")
 		)
 		(pin "3"
-			(uuid "4a9ab720-cab1-48d7-ae9f-d3e98dfe3116")
+			(uuid "4a9ab720-cab1-48d7-ae9f-d3e98dfe3117")
 		)
 		(pin "6"
-			(uuid "58d16139-726b-4ae7-b6dd-2fac515e8a05")
+			(uuid "58d16139-726b-4ae7-b6dd-2fac515e8a06")
 		)
 		(pin "4"
-			(uuid "284a7211-9b1d-4130-88b4-5d0a352fea79")
+			(uuid "284a7211-9b1d-4130-88b4-5d0a352fea7a")
 		)
 		(pin "7"
-			(uuid "4aa8cfb3-49fb-4281-a4b3-7e1536eeae29")
+			(uuid "4aa8cfb3-49fb-4281-a4b3-7e1536eeae2a")
 		)
 		(pin "1"
-			(uuid "dbf5e2d8-5097-46fe-8b86-afc337bfdbde")
+			(uuid "dbf5e2d8-5097-46fe-8b86-afc337bfdbdf")
 		)
 		(pin "8"
-			(uuid "5fcd9453-98ec-4c10-b00a-132eee464329")
+			(uuid "5fcd9453-98ec-4c10-b00a-132eee46432a")
 		)
 		(pin "5"
-			(uuid "026521e5-29e7-42e6-bcc6-1985729d2f87")
+			(uuid "026521e5-29e7-42e6-bcc6-1985729d2f88")
 		)
 		(instances
 			(project "Chorus_CH32"
@@ -4979,7 +5015,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_Small")
-		(at 83.82 33.02 0)
+		(at 142.24 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4987,7 +5023,7 @@
 		(dnp no)
 		(uuid "a8ed092c-8506-4796-9739-c32b25f1dfa5")
 		(property "Reference" "C6"
-			(at 84.328 31.242 0)
+			(at 142.748 29.972 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4996,7 +5032,7 @@
 			)
 		)
 		(property "Value" "47u"
-			(at 84.328 35.052 0)
+			(at 142.748 33.782 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5005,7 +5041,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4"
-			(at 83.82 33.02 0)
+			(at 142.24 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5014,7 +5050,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 83.82 33.02 0)
+			(at 142.24 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5023,7 +5059,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 83.82 33.02 0)
+			(at 142.24 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5380,7 +5416,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 72.39 29.21 90)
+		(at 130.81 27.94 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5388,7 +5424,7 @@
 		(dnp no)
 		(uuid "cfee5df2-4823-432b-bace-5a0c251a250a")
 		(property "Reference" "R2"
-			(at 73.66 27.178 90)
+			(at 132.08 25.908 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5396,8 +5432,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "39K"
-			(at 74.422 29.21 90)
+		(property "Value" "10k"
+			(at 132.842 27.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5406,7 +5442,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.39 30.988 90)
+			(at 130.81 29.718 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5415,7 +5451,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 72.39 29.21 0)
+			(at 130.81 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5424,7 +5460,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 72.39 29.21 0)
+			(at 130.81 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5449,7 +5485,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 78.74 33.02 0)
+		(at 137.16 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5457,7 +5493,7 @@
 		(dnp no)
 		(uuid "db7f9eec-a0fb-45d4-b0c8-bd751c689a67")
 		(property "Reference" "R3"
-			(at 79.756 33.02 0)
+			(at 138.176 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5465,8 +5501,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15K"
-			(at 78.74 35.052 90)
+		(property "Value" "10k"
+			(at 137.16 33.782 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5475,7 +5511,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 76.962 33.02 90)
+			(at 135.382 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5484,7 +5520,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 78.74 33.02 0)
+			(at 137.16 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5493,7 +5529,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 78.74 33.02 0)
+			(at 137.16 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5570,28 +5606,28 @@
 			)
 		)
 		(pin "2"
-			(uuid "d6d167c2-71b2-4a06-8c9f-6cd5865d1549")
+			(uuid "d6d167c2-71b2-4a06-8c9f-6cd5865d154b")
 		)
 		(pin "3"
-			(uuid "4a9ab720-cab1-48d7-ae9f-d3e98dfe3116")
+			(uuid "4a9ab720-cab1-48d7-ae9f-d3e98dfe3118")
 		)
 		(pin "6"
-			(uuid "58d16139-726b-4ae7-b6dd-2fac515e8a05")
+			(uuid "58d16139-726b-4ae7-b6dd-2fac515e8a07")
 		)
 		(pin "4"
-			(uuid "284a7211-9b1d-4130-88b4-5d0a352fea79")
+			(uuid "284a7211-9b1d-4130-88b4-5d0a352fea7b")
 		)
 		(pin "7"
-			(uuid "4aa8cfb3-49fb-4281-a4b3-7e1536eeae29")
+			(uuid "4aa8cfb3-49fb-4281-a4b3-7e1536eeae2b")
 		)
 		(pin "1"
-			(uuid "dbf5e2d8-5097-46fe-8b86-afc337bfdbde")
+			(uuid "dbf5e2d8-5097-46fe-8b86-afc337bfdbe0")
 		)
 		(pin "8"
-			(uuid "5fcd9453-98ec-4c10-b00a-132eee464329")
+			(uuid "5fcd9453-98ec-4c10-b00a-132eee46432b")
 		)
 		(pin "5"
-			(uuid "026521e5-29e7-42e6-bcc6-1985729d2f87")
+			(uuid "026521e5-29e7-42e6-bcc6-1985729d2f89")
 		)
 		(instances
 			(project "Chorus_CH32"

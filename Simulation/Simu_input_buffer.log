@@ -1,0 +1,5 @@
+LTspice 24.0.12 for Windows
+Circuit: * C:\Users\Pierre-Anthony\Documents\GitHub\Chorus_CH32\Simulation\Simu_input_buffer.asc
+Start Time: Wed Sep 25 22:40:02 2024
+Fatal Error: Unknown subcircuit called in:
+   xu1 vin n001 9v 0 vout tl072

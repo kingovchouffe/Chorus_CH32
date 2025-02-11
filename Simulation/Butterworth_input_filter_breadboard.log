@@ -1,6 +1,6 @@
 LTspice 24.0.12 for Windows
-Circuit: * C:\Users\Pierre-Anthony\Documents\GitHub\Chorus_CH32\Simulation\Butterworth_input_filter.asc
-Start Time: Sun Dec  1 16:43:08 2024
+Circuit: * C:\Users\Pierre-Anthony\Documents\GitHub\Chorus_CH32\Simulation\Butterworth_input_filter_breadboard.asc
+Start Time: Tue Jan 14 16:42:14 2025
 solver = Normal
 Maximum thread count: 24
 tnom = 27
@@ -25,14 +25,7 @@ vernier = 0.000976562
 vernier = 0.000488281
 Gmin = 5.50104
 Gmin = 0
-Gmin stepping failed
+Gmin stepping succeeded in finding the operating point.
 
-Starting source stepping with srcstepmethod=0
-Source Step = 3.0303%
-Source Step = 33.3333%
-Source Step = 63.6364%
-Source Step = 93.9394%
-Source stepping succeeded in finding the operating point.
-
-Total elapsed time: 0.106 seconds.
+Total elapsed time: 0.135 seconds.
 

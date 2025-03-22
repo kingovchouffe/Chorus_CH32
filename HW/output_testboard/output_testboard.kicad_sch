@@ -6563,7 +6563,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2M2"
+		(property "Value" "3k3"
 			(at 38.608 118.11 90)
 			(effects
 				(font
@@ -6904,7 +6904,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "74d45299-df6b-421d-9b1d-744ed706d31b")
 		(property "Reference" "R18"
 			(at 212.852 102.108 90)
@@ -7862,7 +7862,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "6k8"
+		(property "Value" "47k"
 			(at 216.408 113.03 90)
 			(effects
 				(font
@@ -8142,7 +8142,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a178b34a-24d6-4f85-bf04-3a6202ed75f0")
 		(property "Reference" "R3"
 			(at 38.862 122.682 90)

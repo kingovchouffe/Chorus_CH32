@@ -1,6 +1,6 @@
 LTspice 24.0.12 for Windows
 Circuit: * C:\Users\Pierre-Anthony\Documents\GitHub\Chorus_CH32\Simulation\output.asc
-Start Time: Tue Mar 11 23:32:54 2025
+Start Time: Sat Mar 15 00:08:17 2025
 solver = Normal
 Maximum thread count: 24
 tnom = 27
@@ -8,11 +8,14 @@ temp = 27
 method = modified trap
 Limiting rise time of source v5 to 1e-06
 Limiting fall time of source v5 to 1e-06
-WARNING: Node NC_02 is floating.
+WARNING: Node NC_03 is floating.
 
 WARNING: Less than two connections to node nc_01.  This node is used by v3.
-WARNING: Less than two connections to node nc_02.  This node is used by c8.
-WARNING: Less than two connections to node nc_03.  This node is used by v5.
+WARNING: Less than two connections to node nc_02.  This node is used by v4.
+WARNING: Less than two connections to node nc_03.  This node is used by v4.
+WARNING: Less than two connections to node nc_04.  This node is used by r7.
+WARNING: Less than two connections to node nc_05.  This node is used by r9.
+WARNING: Less than two connections to node nc_06.  This node is used by r15.
 Early termination of direct N-R iteration.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
@@ -32,14 +35,7 @@ vernier = 0.000976562
 vernier = 0.000488281
 Gmin = 5.50104
 Gmin = 0
-Gmin stepping failed
+Gmin stepping succeeded in finding the operating point.
 
-Starting source stepping with srcstepmethod=0
-Source Step = 3.0303%
-Source Step = 33.3333%
-Source Step = 63.6364%
-Source Step = 93.9394%
-Source stepping succeeded in finding the operating point.
-
-Total elapsed time: 0.314 seconds.
+Total elapsed time: 0.585 seconds.
 

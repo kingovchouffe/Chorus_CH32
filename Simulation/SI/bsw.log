@@ -1,0 +1,14 @@
+2025-03-22 16:20:13 11704     [INFO] ****** HyperLynx VX2.10 build 19246144 
+2025-03-22 16:20:13 11704     [INFO]        C:\MentorGraphics\HLVX.2.10\SDD_HOME\hyperlynx64\bsw.exe 
+2025-03-22 16:21:11 11704     [INFO] Opening Project C:\Users\Pierre-Anthony\Documents\GitHub\Chorus_CH32\Simulation\SI\Chorus_CH32.hyp
+2025-03-22 16:21:11 11704     [INFO] Opened Board: Chorus_CH32.hyp <C:\Users\Pierre-Anthony\Documents\GitHub\Chorus_CH32\Simulation\SI\>
+2025-03-22 16:21:11 11704  [WARNING] Warning: One or more nets are completely unrouted.  Do you want to connect them using "virtual", Manhattan-style routing?  (Does not apply to power-supply nets.)  Note: This process will begin by determining the detailed routing status of every net on the board, which can be very time-consuming (especially if some power-supply nets are mistakenly identified as signal nets).  If you prefer to skip this process now, you can run it later using Edit > Connect Nets with Manhattan Routing. - The "No" button was selected
+2025-03-22 16:22:55 11704  [WARNING] No driver on selected net. Choose a driver now? - The "No" button was selected
+2025-03-22 16:25:01 11704  [WARNING] No driver on selected net. Choose a driver now? - The "No" button was selected
+2025-03-22 16:26:33 11704  [WARNING] No IC output on selected net (i.e., no driver). Stopping.
+2025-03-22 16:35:58 11704  [WARNING] Warning: No probes are enabled. Please enable at least one before simulating.
+2025-03-22 16:38:51 11704     [INFO] This design's .HYP file was created by a PCB translator that did not record whether the physical information is sufficiently detailed for power-integrity analysis (especially metal areas and via clearances).  Most likely, the translator was an older version not upgraded for PI usage.  PI simulation may therefore produce less-accurate results.
+2025-03-22 16:40:53 11704  [WARNING] No IC output on selected net (i.e., no driver). Stopping.
+2025-03-22 16:47:19 11704     [INFO] Close HyperLynx Session: Design file: Chorus_CH32.hyp Save session edits (Yes/No)?  YES -> save, then close NO  -> close - The "No" button was selected
+2025-03-22 16:47:23 11704     [INFO] Closing Design: Chorus_CH32.hyp
+2025-03-22 16:47:25 11704     [INFO] ****** Closing HyperLynx 

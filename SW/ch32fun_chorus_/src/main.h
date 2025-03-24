@@ -6,10 +6,42 @@
 #define RATE_POT gpio_ain
 #define OutputPin PC0
 #define PWM_CHANNEL 3
+#define SAMPLE_RATE 97700
+#define MAX_DELAY_MS 25   // Délai maximal en ms
+#define LFO_FREQUENCY 0.5 // Fréquence du LFO en Hz
+#define DEPTH_MS 10       // Profondeur de modulation en ms
+#define TWO_PI 6.28318530718
 
 #define BUFFER_LENGTH 256
-uint16_t buffer[BUFFER_LENGTH] = {0};
+volatile uint16_t buffer[BUFFER_LENGTH] = {0};
+volatile uint16_t delay_buffer[BUFFER_LENGTH] = {0};
+//void DMA1_Channel1_IRQHandler(void) __attribute__((interrupt));
 
+
+void process_audio_dma(void)
+{  
+    static int sample_count = 0;
+    // Lecture de l'ADC (valeur 12 bits)
+    for (int i = 0; i < BUFFER_LENGTH; i++)
+    {
+        // Génération du LFO sinusoïdal
+        
+        float lfo_value = sinf(TWO_PI * LFO_FREQUENCY * sample_count / SAMPLE_RATE);
+        sample_count++;
+
+        // Calcul du retard dynamique
+        int max_delay_samples = (SAMPLE_RATE * MAX_DELAY_MS) / 1000;
+        int depth_samples = (SAMPLE_RATE * DEPTH_MS) / 1000;
+        int delay_samples = max_delay_samples / 2 + (int)(depth_samples * lfo_value);
+        int read_index = i - delay_samples;
+        if (read_index < 0)
+            read_index += BUFFER_LENGTH;
+
+        // Sauvegarde du signal actuel dans le buffer circulaire
+        delay_buffer[i] = buffer[read_index];
+    }
+
+}
 // Instanciate dma copy to adc_buffer from adc HW
 void init_dma_adc()
 {
@@ -29,10 +61,11 @@ void init_dma_adc()
     DMA1_Channel1->PADDR = (uint32_t)&ADC1->RDATAR;
     // Destination
     DMA1_Channel1->MADDR = (uint32_t)buffer;
-    
+   
     // Enable IRQ and DMA channel
     NVIC_EnableIRQ(DMA1_Channel1_IRQn);
     DMA1_Channel1->CFGR |= DMA_IT_TC | DMA_CFGR1_EN;
+    
 }
 
 // Instanciate dma copy to PWM register from adc buffer
@@ -47,14 +80,15 @@ void init_dma_copy_to_pwm()
     // No of samples to get before irq
     DMA1_Channel2->CNTR = BUFFER_LENGTH;
     // Source
-    DMA1_Channel2->MADDR = (uint32_t)buffer;
+    DMA1_Channel2->MADDR = (uint32_t)delay_buffer;
+    
     // Destination to PWM register
     DMA1_Channel2->PADDR = (uint32_t)&TIM2->CH3CVR;
 
     // Enable IRQ and DMA channel
     // DMA1_Channel2->CFGR |= DMA_CFGR1_TCIE;
     NVIC_EnableIRQ(DMA1_Channel2_IRQn);
-    DMA1_Channel2->CFGR |= DMA_IT_TC | DMA_CFGR1_EN;
+    DMA1_Channel2->CFGR |= DMA_IT_TC | DMA_CFGR2_EN;
 }
 void init_timer2()
 {
@@ -108,8 +142,9 @@ void init_timer1()
     //TIM1->SWEVGR = TIM_PSCReloadMode_Immediate;
     NVIC_EnableIRQ(TIM1_UP_IRQn);
     TIM1->INTFR = ~TIM_FLAG_Update;
-    TIM1->DMAINTENR |= TIM_IT_Update;
+    //TIM1->DMAINTENR |= TIM_IT_Update;
     TIM1->BDTR |= TIM_MOE;
+    TIM1->DMAINTENR |= TIM_TDE;
     TIM1->DMAINTENR = TIM_UDE;
 
     init_timer2();
@@ -153,4 +188,15 @@ void init_adc()
         ;
 
     ADC1->RDATAR; // wake up the dma
+}
+void DMA1_Channel1_IRQHandler(void) __attribute__((interrupt));
+void DMA1_Channel1_IRQHandler()
+{       printf("coucou\r\n");
+        // DMA complete ?
+        if (DMA1->INTFR & DMA1_FLAG_TC1) {
+            DMA1->INTFCR = DMA_CTCIF1;
+            process_audio_dma(); 
+            // rearmed dma
+            init_dma_adc();
+        }
 }
